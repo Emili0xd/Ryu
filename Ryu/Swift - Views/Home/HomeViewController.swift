@@ -321,7 +321,7 @@ class HomeViewController: UITableViewController, SourceSelectionDelegate {
             
             self.present(alertController, animated: true, completion: nil)
         } else {
-            SourceMenu.showSourceSelector(from: self, sourceView: sender)
+            SourceMenu.showSourceSelector(from: self, sourceView: sender as? UIView)
         }
     }
     
